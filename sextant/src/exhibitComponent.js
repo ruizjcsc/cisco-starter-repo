@@ -1,5 +1,6 @@
-import './App.css'
+import './exhibit.css'
 import React, { Component } from 'react';
+
 
 class exhibitComponent extends Component {
     render(){
