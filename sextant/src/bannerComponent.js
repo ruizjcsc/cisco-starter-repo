@@ -1,9 +1,13 @@
+import React, { Component } from 'react';
 
-const bannerComponent = () => {
-  return (<div>
-            <h1>Sextant</h1>
-         </div>
-  );
+class bannerComponent extends Component {
+  render(){
+    return(
+      <div >
+        <h1>{this.props.bannerText}</h1>
+      </div>
+    );
+  }
 }
 
 export default bannerComponent;
