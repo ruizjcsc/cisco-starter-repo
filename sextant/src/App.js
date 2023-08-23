@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+//use uppercase for component names 
+import Banner from './bannerComponent';
+import ExhibitComponent from './exhibitComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner/>
+      <ExhibitComponent className = 'exhibit'>
+        <h1>Exhibit</h1>
+        <p>hello exhibit</p>
+        </ExhibitComponent>
+        <ExhibitComponent>
+          <h1>Exhibit2</h1>
+          <p>blah blah blah</p>
+        </ExhibitComponent>
+        
     </div>
   );
 }
