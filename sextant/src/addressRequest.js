@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import './addressRequest.css'
+import './addressRequest.css';
 
 class addressRequest extends Component {
     constructor(props){
