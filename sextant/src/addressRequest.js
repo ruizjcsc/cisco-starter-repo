@@ -12,7 +12,7 @@ class addressRequest extends Component {
         // below is the props to differentiate ipv4 and ipv6
         // props short for porperties 
         const {addressType} = this.props;
-        const url = addressType == "ipv6" ? 'https://api64.ipify.org?format=json' : 'https://api.ipify.org?format=json';
+        const url = addressType === "ipv6" ? 'https://api64.ipify.org?format=json' : 'https://api.ipify.org?format=json';
         // this is the api call for ipv4
         fetch(url)
             .then((response) => response.json())
